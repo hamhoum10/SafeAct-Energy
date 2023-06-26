@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>UpConstruction Bootstrap Template - Service Details</title>
+  <title>UpConstruction Bootstrap Template - Contact</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../../public/assets/img/favicon.png" rel="icon">
-  <link href="../../public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ asset('assets/img/favicon.png')}}" rel="icon">
+  <link href="{{ asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../../public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../../public/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="../../public/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../../public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../../public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="../../public/assets/css/main.css" rel="stylesheet">
+  <link href="{{ asset('assets/css/main.css')}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: UpConstruction
@@ -44,7 +44,7 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html.twig" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>UpConstruction<span>.</span></h1>
@@ -54,11 +54,11 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html.twig">Home</a></li>
+          <li><a href="about.html.twig">About</a></li>
+          <li><a href="services.html.twig">Services</a></li>
+          <li><a href="projects.html.twig">Projects</a></li>
+          <li><a href="blog.html.twig">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -76,7 +76,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -89,57 +89,81 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('../../public/assets/img/breadcrumbs-bg.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>Service Details</h2>
+        <h2>Contact</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Service Details</li>
+          <li><a href="index.html.twig">Home</a></li>
+          <li>Contact</li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Service Details Section ======= -->
-    <section id="service-details" class="service-details">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="services-list">
-              <a href="#" class="active">Remodeling</a>
-              <a href="#">Construction</a>
-              <a href="#">Product Management</a>
-              <a href="#">Repairs</a>
-              <a href="#">Design</a>
+          <div class="col-lg-6">
+            <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
             </div>
+          </div><!-- End Info Item -->
 
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
-          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div><!-- End Info Item -->
 
-          <div class="col-lg-8">
-            <img src="../../public/assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
-          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+
+          <div class="col-lg-6 ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div><!-- End Google Maps -->
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
 
         </div>
 
       </div>
-    </section><!-- End Service Details Section -->
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -239,16 +263,16 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="../../public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../public/assets/vendor/aos/aos.js"></script>
-  <script src="../../public/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../../public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../../public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../../public/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../../public/assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ asset('assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{ asset('assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="../../public/assets/js/main.js"></script>
+  <script src="{{ asset('assets/js/main.js')}}"></script>
 
 </body>
 
