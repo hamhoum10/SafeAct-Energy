@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
+  --color-primary:  #0000ff;/*#89cff0*/
   --color-secondary: #52565e;
 }
 
@@ -2669,3 +2669,20 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
+/*--------------------------------------------------------------
+# my css
+--------------------------------------------------------------*/
+.hommepage1{
+  background-image: url("../img/im1_hommepage.jpg");
+}
+.hommepage2{
+  background-image: url("../img/im2_hommepage.jpg");
+}
+.hommepage3{
+  background-image: url("../img/im1_hommepage.jpg");
+}
+.hommepage4{
+  background-image: url("../img/im1_hommepage.jpg");
+}.hommepage5{
+   background-image: url("../img/im1_hommepage.jpg");
+ }
