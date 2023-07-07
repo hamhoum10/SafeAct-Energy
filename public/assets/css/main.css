@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary:  #0000ff;/*#89cff0*/
+  --color-primary:  #89cff0;
   --color-secondary: #52565e;
 }
 
@@ -2561,7 +2561,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/im2_hommepage.jpg");
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
@@ -2679,10 +2679,20 @@ section {
   background-image: url("../img/im2_hommepage.jpg");
 }
 .hommepage3{
-  background-image: url("../img/im1_hommepage.jpg");
+  background-image: url("../img/im3_hommepage.jpg");
 }
 .hommepage4{
-  background-image: url("../img/im1_hommepage.jpg");
-}.hommepage5{
-   background-image: url("../img/im1_hommepage.jpg");
+  background-image: url("../img/im4_hommepage.jpg");
+}
+.hommepage5{
+   background-image: url("../img/im5_hommepage.jpg");
+
+
  }
+/*#navbar {*/
+/*  position: fixed ;*/
+/*  top: 0;*/
+/*  width: 100%;*/
+/*  background-color: black;*/
+/*  */
+/*}*/

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Safe Act Energie</title>
+    <title>SafeAct Energie</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -44,39 +44,30 @@
 <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href={{ path('app_safeact_homme_page') }} class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 style="color: red">SafeAct<span style="color:#0000ff;">Energie</span></h1>
+            <h1 style="color: red">SafeAct <BR><pre>   <span style="color:#0000ff;">Energie</span> </pre></h1>
         </a>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html.twig">About</a></li>
-                <li><a href="services.html.twig">Services</a></li>
-                <li><a href="projects.html.twig">Projects</a></li>
-                <li><a href="blog.html.twig">Blog</a></li>
-                <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <li><a href={{ path('app_safeact_homme_page') }}  class="active">Home</a></li>
+                <li><a href="#constructions">About</a></li>
+                <li class="dropdown"><a href="#services"><span>services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Dropdown 1</a></li>
-                                <li><a href="#">Deep Dropdown 2</a></li>
-                                <li><a href="#">Deep Dropdown 3</a></li>
-                                <li><a href="#">Deep Dropdown 4</a></li>
-                                <li><a href="#">Deep Dropdown 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a href="#">Industry</a></li>
+                        <li><a href="#">Civil/Residential</a></li>
+                        <li><a href="#">Consulting</a></li>
+
                     </ul>
                 </li>
-                <li><a href="contact.html.twig">Contact</a></li>
+                <li><a href="projects.html.twig">Projects</a></li>
+                <li><a href="blog.html.twig">Reference</a></li>
+
+                <li><a href={{ path('app_safe_act_contact_us') }}>Contact</a></li>
             </ul>
         </nav><!-- .navbar -->
 
@@ -105,7 +96,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 text-center">
-                            <h2 data-aos="fade-down">Welcome to <span>Safe Act Energie</span></h2>
+                            <h2 data-aos="fade-down">FIRE FIGHTING ENGINEERING</h2>
 
                         </div>
 
@@ -118,7 +109,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 text-center">
-                            <h2 data-aos="fade-down">System de detection et lutte incendie</h2>
+                            <h2 data-aos="fade-down">Fire detection and fighting system</h2>
 
                         </div>
 
@@ -126,9 +117,34 @@
                 </div>
             </div>
         </div>
-        <div class="carousel-item hommepage3"></div>
-        <div class="carousel-item hommepage4" ></div>
-        <div class="carousel-item hommepage5" ></div>
+        <div class="carousel-item hommepage3">
+            <div class="info d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <h2 data-aos="fade-down">Electricity and industrial process</h2>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item hommepage5 " >
+            <div class="info d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <h2 data-aos="fade-down">Consulting</h2>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -151,17 +167,117 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">
-                <h2>A PROPOS DE NOUS</h2>
-                <p>L’entreprise SafeAct Energy est une société jeune et dynamique, née d’une véritable passion pour la gestion et la réalisation des projets industriels.<br><br>
+                <h2>ABOUT US</h2>
+                <p>SafeAct Energy is a young and dynamic company, born from a real passion for the management and realization of industrial projects.<br><br>
 
-                    Notre savoir‐faire et nos compétences reposent sur une organisation sans faille qui est le fruit de notre grande expérience à l’échelle internationale dans les bureaux d’études ou sur terrain, ceci est booster par des équipes expérimentés et motivés.<br><br>
+                    Our know-how and our skills are based on a flawless organization which is the fruit of our extensive experience on an international scale in the design offices or in the field, this is boosted by experienced and motivated teams.<br><br>
 
-                    Quel que soit votre projet, l’entreprise SafeAct Energy vous accompagne, identifie l’ensemble de vos besoins et vous propose des solutions personnalisées répondant à votre attente.</p>
+                    Whatever your project, the SafeAct Energy company supports you, identifies all your needs and offers you personalized solutions that meet your expectations.</p>
             </div>
 
 
         </div>
     </section><!-- End Constructions Section -->
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team" >
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Our Team</h2>
+                </div>
+
+            <div class="row gy-5">
+
+                <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img ">
+                        <img src="{{ asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt="">
+                        <div class="social">
+
+                            <a href="https://www.linkedin.com/company/safeactenergy " target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Walter White</h4>
+                        <span>Chief Executive Officer</span>
+                        <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-img">
+                        <img src="{{ asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/company/safeactenergy " target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Sarah Jhonson</h4>
+                        <span>Product Manager</span>
+                        <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-img">
+                        <img src="{{ asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt="">
+                        <div class="social">
+
+                            <a href="https://www.linkedin.com/company/safeactenergy " target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>William Anderson</h4>
+                        <span>CTO</span>
+                        <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member-img">
+                        <img src="{{ asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/company/safeactenergy " target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Amanda Jepson</h4>
+                        <span>Accountant</span>
+                        <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+                    <div class="member-img">
+                        <img src="{{ asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/company/safeactenergy " target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Brian Doe</h4>
+                        <span>Marketing</span>
+                        <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+                    <div class="member-img">
+                        <img src="{{ asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/company/safeactenergy " target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4>Josepha Palas</h4>
+                        <span>Operation</span>
+                        <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
+                    </div>
+                </div><!-- End Team Member -->
+
+            </div>
+
+        </div>
+    </section><!-- End Our Team Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
@@ -177,9 +293,9 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-item  position-relative">
                         <div class="icon">
-                            <i class="fa-solid fa-mountain-city"></i>
+                            <i class="fa-solid fa-city "></i>
                         </div>
-                        <h3>Industrie</h3>
+                        <h3>Industry</h3>
                         <p>about the domain</p>
 
                         <a href="service-details.html.twig" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
@@ -189,7 +305,7 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-item position-relative">
                         <div class="icon">
-                            <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                            <i class="fa-solid fa-tree-city "></i>
                         </div>
                         <h3>Civil / Residential</h3>
                         <p>about the domain</p>
@@ -244,10 +360,10 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href={{ path('app_safeact_homme_page') }} >Home</a></li>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Reference</a></li>
                         <li><a href="#">Privacy policy</a></li>
                     </ul>
                 </div><!-- End footer links column-->
@@ -255,7 +371,7 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="#">Industrie</a></li>
+                        <li><a href="#">Industry</a></li>
                         <li><a href="#">Civil/Residential</a></li>
                         <li><a href="#">Consulting</a></li>
 
@@ -299,6 +415,17 @@
 
 <!-- Template Main JS File -->
 <script src="{{ asset('assets/js/main.js')}}"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.pageYOffset > 0) {
+                navbar.style.top = '0';
+            } else {
+                navbar.style.top = '';
+            }
+        });
+    </script>
+</main>
 
 </body>
 
