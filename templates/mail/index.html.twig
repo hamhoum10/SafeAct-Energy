@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mail index{% endblock %}
+
+{% block body %}
+    <h1>Mail index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for mail in mails %}
+            <tr>
+                <td>{{ mail.id }}</td>
+                <td>{{ mail.name }}</td>
+                <td>{{ mail.email }}</td>
+                <td>{{ mail.subject }}</td>
+                <td>{{ mail.message }}</td>
+                <td>
+                    <a href="{{ path('app_mail_show', {'id': mail.id}) }}">show</a>
+                    <a href="{{ path('app_mail_edit', {'id': mail.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_mail_new') }}">Create new</a>
+{% endblock %}
