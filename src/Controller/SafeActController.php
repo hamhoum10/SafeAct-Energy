@@ -24,7 +24,7 @@ use Symfony\Component\Mime\Email;
 #[Route('/safeactenergie')]
 class SafeActController extends AbstractController
 {
-//    #[Route('/email',name: 'app_safeact_mail' )]
+
     public function sendEmail(MailerInterface $mailer,string $name,string $subject,string $message,string $email): void
     {
         $email = (new Email())
@@ -74,30 +74,8 @@ class SafeActController extends AbstractController
     {
         return $this -> render('safe_act/homme.html.twig');
     }
-    #[Route('/about', name: 'app_safeact_about')]
-    public  function about_page():Response
-    {
-        return $this -> render('safe_act/about.html.twig');
-    }
-    #[Route('/new', name: 'app_mail_new', methods: ['GET', 'POST'])]
-    public function new(\Symfony\Component\HttpFoundation\Request $request, EntityManagerInterface $entityManager): Response
-    {
-        $mail = new Mail();
-        $form = $this->createForm(Mail1Type::class, $mail);
-        $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->persist($mail);
-            $entityManager->flush();
 
-            return $this->redirectToRoute('app_mail_index', [], Response::HTTP_SEE_OTHER);
-        }
-
-        return $this->renderForm('mail/new.html.twig', [
-            'mail' => $mail,
-            'form' => $form,
-        ]);
-    }
 
 
 
