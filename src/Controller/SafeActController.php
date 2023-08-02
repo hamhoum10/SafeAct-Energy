@@ -25,7 +25,7 @@ use Symfony\Component\Mime\Email;
 class SafeActController extends AbstractController
 {
 //    #[Route('/email',name: 'app_safeact_mail' )]
-    public function sendEmail(MailerInterface $mailer,string $addresses): void
+    public function sendEmail(MailerInterface $mailer,string $name,string $subject,string $message,string $email): void
     {
         $email = (new Email())
             ->from('omriyasser12@gmail.com')
@@ -34,8 +34,8 @@ class SafeActController extends AbstractController
             //->bcc('bcc@example.com')
             //->replyTo('fabien@example.com')
             //->priority(Email::PRIORITY_HIGH)
-            ->subject('Time for Symfony Mailer!')
-            ->text($addresses);
+            ->subject($subject)
+            ->text('you have a mail from :'.$name.' who have a mail: '.$email.' saying '.$message);
 
 
 
@@ -53,8 +53,10 @@ class SafeActController extends AbstractController
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid())  {
           $name =$form->get('name')->getData();
-//            $name='hello15';
-          $this->sendEmail($mailer,$name);
+            $email =$form->get('email')->getData();
+            $subject =$form->get('subject')->getData();
+            $message =$form->get('message')->getData();
+          $this->sendEmail($mailer,$name,$subject,$message,$email);
 
 
 
