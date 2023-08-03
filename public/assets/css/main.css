@@ -2672,8 +2672,11 @@ section {
 /*--------------------------------------------------------------
 # my css
 --------------------------------------------------------------*/
-.hommepage1{
+.hommepage9{
   background-image: url("../img/20230405_165012.jpg");
+}
+.hommepage8{
+  background-image: url("../img/10.png");
 }
 .hommepage2{
   background-image: url("../img/im2_hommepage.jpg");
