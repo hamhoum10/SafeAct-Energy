@@ -56,7 +56,7 @@ class SafeActController extends AbstractController
             $email =$form->get('email')->getData();
             $subject =$form->get('subject')->getData();
             $message =$form->get('message')->getData();
-          $this->sendEmail($mailer,$name,$subject,$message,$email);
+//          $this->sendEmail($mailer,$name,$subject,$message,$email);
 
 
 
