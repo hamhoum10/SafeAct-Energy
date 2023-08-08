@@ -251,7 +251,7 @@ section {
 .header {
   z-index: 997;
   position: absolute;
-  padding: 30px 0;
+  /*padding: 30px 0;*/
   top: 0;
   left: 0;
   right: 0;
@@ -292,6 +292,7 @@ section {
 
   .navbar li {
     position: relative;
+
   }
 
   .navbar>ul>li {
@@ -306,7 +307,7 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: 21px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
@@ -317,7 +318,7 @@ section {
 
   .navbar a i,
   .navbar a:focus i {
-    font-size: 12px;
+    font-size: 20px;
     line-height: 0;
     margin-left: 5px;
   }

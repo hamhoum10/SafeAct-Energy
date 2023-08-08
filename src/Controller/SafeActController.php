@@ -51,13 +51,15 @@ class SafeActController extends AbstractController
         $mail=new Mail();
         $form = $this->createForm(MailType::class,$mail);
         $form->handleRequest($request);
+
         if ($form->isSubmitted() && $form->isValid())  {
           $name =$form->get('name')->getData();
             $email =$form->get('email')->getData();
             $subject =$form->get('subject')->getData();
             $message =$form->get('message')->getData();
-//          $this->sendEmail($mailer,$name,$subject,$message,$email);
+//         $this->sendEmail($mailer,$name,$subject,$message,$email);
 
+            $entityManager->flush();
 
 
 
