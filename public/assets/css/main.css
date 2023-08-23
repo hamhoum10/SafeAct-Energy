@@ -114,6 +114,9 @@ section {
 .contact_us {
   background-image: url('../img/contact_us.png');
 }
+.contact_us1 {
+  background-image: url('../img/20230405_165012.jpg');
+}
 .breadcrumbs {
   padding: 140px 0 60px 0;
   min-height: 30vh;
@@ -307,7 +310,7 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-primary);
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
@@ -2700,3 +2703,54 @@ section {
 /*  background-color: black;*/
 /*  */
 /*}*/
+/* styles.css */
+.yasser-container {
+  width: 100%;
+  /*padding: 60px 0;*/
+  overflow: hidden;
+  white-space: nowrap;
+  /*background: white;*/
+}
+
+.yasser {
+  display: inline-flex;
+  animation:  35s slide  infinite linear;
+}
+
+.yasser img {
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.yasser-container:hover .yasser{
+  animation-play-state: paused;
+}
+.yasser-container:before,
+.yasser-container:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+
+}
+
+.yasser-container:before {
+  left: 0;
+  /*background: linear-gradient(to left, rgba(255, 255, 255, 0), white);*/
+}
+
+.yasser-container:after {
+  right: 0;
+  /*background: linear-gradient(to right, rgba(255, 255, 255, 0), white);*/
+}

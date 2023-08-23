@@ -3,18 +3,11 @@
 namespace App\Controller;
 
 use App\Entity\Mail;
-use App\Form\Mail1Type;
 use App\Form\MailType;
-use Doctrine\DBAL\Types\TextType;
 use Doctrine\ORM\EntityManagerInterface;
-use http\Client\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
-use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Annotation\Route;
-
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
 
@@ -50,33 +43,72 @@ class SafeActController extends AbstractController
     {
         $mail=new Mail();
         $form = $this->createForm(MailType::class,$mail);
+
         $form->handleRequest($request);
 
+//
         if ($form->isSubmitted() && $form->isValid())  {
           $name =$form->get('name')->getData();
             $email =$form->get('email')->getData();
             $subject =$form->get('subject')->getData();
             $message =$form->get('message')->getData();
-//         $this->sendEmail($mailer,$name,$subject,$message,$email);
-
-            $entityManager->flush();
 
 
+         $this->sendEmail($mailer,$name,$subject,$message,$email);
 
 
 
-            return $this->render('safe_act/contact_us.html.twig',['form'=>$form->createView()]);
+
+
+
+
+            return $this->render('safe_act/homme.html.twig',['form'=>$form->createView()]);
         }
 
 
-        return $this->render('safe_act/contact_us.html.twig',['form'=>$form->createView()]);
+        return $this->render('safe_act/contact_us.html.twig',
+            ['form'=>$form->createView()]);
     }
     #[Route('/homme', name: 'app_safeact_homme_page')]
     public  function homme_page():Response
     {
         return $this -> render('safe_act/homme.html.twig');
     }
+//    #[Route( name: 'app_safe_act_contact_us10')]
+//    public function con1tact_us(MailerInterface $mailer,\Symfony\Component\HttpFoundation\Request $request,EntityManagerInterface $entityManager): Response
+//    {
+//        $mail=new Mail();
+//        $form = $this->createForm(MailType::class,$mail);
+//
+//        $form->handleRequest($request);
+//
+//        if ($form->isSubmitted() && $form->isValid())  {
+//          $name =$form->get('name')->getData();
+//            $email =$form->get('email')->getData();
+//            $subject =$form->get('subject')->getData();
+//            $message =$form->get('message')->getData();
+////        $name='ts';
+////        $message='ts';$email='ts';$subject='ts';
+//        $this->sendEmail($mailer,$name,$subject,$message,$email);
+//
+//
+//
+//
+//
+//
+//
+//            return $this->render('safe_act/contact_us.html.twig');
+//        }
+//
+//
+//        return $this->render('safe_act/homme.html.twig');
+//    }
 
+    #[Route('/about', name: 'app_safeact_about_page')]
+    public  function about():Response
+    {
+        return $this -> render('safe_act/about.html.twig');
+    }
 
 
 
