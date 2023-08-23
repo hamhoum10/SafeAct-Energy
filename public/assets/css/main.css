@@ -2693,9 +2693,19 @@ section {
 }
 .hommepage5{
    background-image: url("../img/im5_hommepage.jpg");
-
-
  }
+.hommepage6{
+  background-image: url("../img/img_5.png");
+}
+.hommepage7{
+  background-image: url("../img/img_6.png");
+}
+.hommepage8{
+  background-image: url("../img/img_7.png");
+}
+.hommepage10{
+  background-image: url("../img/img_8.png");
+}
 /*#navbar {*/
 /*  position: fixed ;*/
 /*  top: 0;*/
