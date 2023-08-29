@@ -112,7 +112,7 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .contact_us {
-  background-image: url('../img/contact_us.png');
+  background-image: url('../img/2.jpg');
 }
 .contact_us1 {
   background-image: url('../img/20230405_165012.jpg');
@@ -1868,7 +1868,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   inset: 0;
 }
