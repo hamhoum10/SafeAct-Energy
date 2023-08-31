@@ -253,11 +253,18 @@ section {
 --------------------------------------------------------------*/
 .header {
   z-index: 997;
-  position: absolute;
+  position: sticky;
   /*padding: 30px 0;*/
   top: 0;
   left: 0;
   right: 0;
+}
+/*css hamhoum*/
+header.sticky{
+  background: #fff;
+}
+header.sticky ul li a  {
+  color: #000000;
 }
 
 .header .logo img {
@@ -283,6 +290,8 @@ section {
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
+
+
   }
 
   .navbar ul {
@@ -295,6 +304,7 @@ section {
 
   .navbar li {
     position: relative;
+
 
   }
 
@@ -312,7 +322,7 @@ section {
     font-family: var(--font-primary);
     font-size: 17px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -350,7 +360,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #000;
   }
 
   .navbar .dropdown ul {
@@ -2711,7 +2721,7 @@ section {
 /*  top: 0;*/
 /*  width: 100%;*/
 /*  background-color: black;*/
-/*  */
+
 /*}*/
 /* styles.css */
 .yasser-container {
