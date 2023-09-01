@@ -234,6 +234,13 @@
 
 <!-- Template Main JS File -->
 <script src="{{ asset('assets/js/main.js')}}"></script>
+<script>
+    window.addEventListener('scroll', function() {
+        var  header = document.querySelector('header');
+
+        header.classList.toggle("sticky",window.scrollY>0);
+    });
+</script>
 
 </body>
 

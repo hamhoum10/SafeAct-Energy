@@ -352,17 +352,13 @@
 
 <!-- Template Main JS File -->
 <script src="{{ asset('assets/js/main.js')}}"></script>
-{#    <script>#}
-{#        window.addEventListener('scroll', function() {#}
-{#            var  header = document.querySelector('header');#}
-{#            // if (window.pageYOffset > 0) {#}
-{#            //     navbar.style.top = '0';#}
-{#            // } else {#}
-{#            //     navbar.style.top = '';#}
-{#            // }#}
-{#            header.classList.toggle("sticky",window.scrollY>0);#}
-{#        });#}
-{#    </script>#}
+    <script>
+        window.addEventListener('scroll', function() {
+            var  header = document.querySelector('header');
+
+            header.classList.toggle("sticky",window.scrollY>0);
+        });
+    </script>
 </main>
 
 </body>
